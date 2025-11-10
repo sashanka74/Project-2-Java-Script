@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-gray-200">
+    <!-- header section -->
+    <header>
+        <div class="container bg-orange-500 p-3 flex justify-between relative">
+            <h1 class="text-left text-xl mb-4 text-white">🍽️MEAL FINDER </h1>
+            
+            <!-- Menu Button -->
+            <button id="menuBar" class="cursor-pointer">
+            <i class="fa-solid fa-bars"></i></button>
+
+            <!-- side menubar -->
+            <nav id="sidebar"
+              class="hidden absolute top-14 right-3 bg-white shadow-lg rounded-lg w-48 p-3 z-50">
+              <ul id="menuList" class="flex flex-col gap-2 text-gray-800">
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- banner section -->
+   <section
+  class="flex flex-col items-center justify-center h-[50vh] bg-cover bg-center mb-5 relative"
+  style="background-image: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141340.jpg');"
+>
+    <!-- Search bar -->
+    <div class="flex justify-center mb-6">
+      <input type="text" placeholder="Search new recipes here..."
+        class=" bg-white placeholder-gray w-72 rounded-full inline-block text-center border-2 border-gray "
+        id="search-input"
+      />
+      <div id="search-btn" class="bg-orange-500 text-white p-3 rounded-full cursor-pointer">
+      <i class="fa-solid fa-magnifying-glass text-xl"></i>
+      </div>
+    </div>
+
+    <!-- Headings -->
+    <h2 class="text-white text-3xl font-bold">What is Your Favorite Cuisine</h2>
+    <p class="text-white mt-2 text-sm md:text-base tracking-wider">
+      PERSONALIZE YOUR EXPERIENCE
+    </p>
+  </div>
+</section>  
+
+<div id="detailaboutparticularitem">'
+
+</div>
+    <!-- categories section -->
+    <h1 class="text-4xl mt-5 ml-5">Categories</h1>
+    <div class="bg-orange-400 h-1 w-25 rounded-xl ml-6"></div>
+    <div id="mainCategories" class="mainCategories"></div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
